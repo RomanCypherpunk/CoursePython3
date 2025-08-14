@@ -22,5 +22,5 @@ linha = "-" * 30
 print(linha)  # Saída: ------------------------------
 
 # Repetindo uma palavra com espaço
-palavra = ("Oi! " * 3)
+palavra = ("Oi! Tudo bem? " * 3)
 print(palavra)  # Saída: Oi! Oi! Oi! 
