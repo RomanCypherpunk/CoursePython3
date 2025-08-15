@@ -1,29 +1,34 @@
 """
-Este script armazena e exibe informações pessoais de uma pessoa.
+Aula: Variáveis e Tipos de Dados em Python
 
-Variáveis:
-    nome (str): O primeiro nome da pessoa.
-    sobrenome (str): O sobrenome da pessoa.
-    idade (int): A idade da pessoa em anos.
-    altura (float): A altura da pessoa em metros.
-    ano_nascimento (int): O ano de nascimento da pessoa.
-    maior_idade (bool): Indica se a pessoa é maior de idade (idade >= 18).
+Neste exemplo, vamos aprender como declarar variáveis para armazenar informações pessoais
+e como exibi-las utilizando a função print(). Também veremos como utilizar expressões
+lógicas para determinar se uma pessoa é maior de idade.
 
-Autor: Seu Nome
-Data: 2024-06-07
+Variáveis utilizadas:
+    - nome (str): Primeiro nome da pessoa.
+    - sobrenome (str): Sobrenome da pessoa.
+    - idade (int): Idade em anos.
+    - altura (float): Altura em metros.
+    - ano_nascimento (int): Ano de nascimento.
+    - maior_idade (bool): True se idade >= 18, caso contrário False.
 """
 
-nome = "Carlos"
-sobrenome = "Silva"
-idade = 30
-altura = 1.75
-ano_nascimento = 1993
-maior_idade = idade >= 18
+# Declarando variáveis com informações pessoais
+nome = "Carlos"              # str: primeiro nome
+sobrenome = "Silva"          # str: sobrenome
+idade = 30                   # int: idade em anos
+altura = 1.75                # float: altura em metros
+ano_nascimento = 1993        # int: ano de nascimento
 
-print("Nome:", nome)
-print("Sobrenome:", sobrenome)
-print("Idade:", idade)
-print("Altura:", altura)
-print("Ano de nascimento:", ano_nascimento)
-print("É maior de idade?", maior_idade)
+# Verificando se a pessoa é maior de idade
+maior_idade = idade >= 18    # bool: True se idade >= 18
 
+# Exibindo as informações na tela
+print("Informações pessoais:")
+print(f"Nome: {nome}")
+print(f"Sobrenome: {sobrenome}")
+print(f"Idade: {idade} anos")
+print(f"Altura: {altura} m")
+print(f"Ano de nascimento: {ano_nascimento}")
+print(f"É maior de idade? {maior_idade}")

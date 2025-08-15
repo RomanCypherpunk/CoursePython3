@@ -1,26 +1,29 @@
-# Definindo as variáveis
+# Aula: Utilizando f-strings para formatação de strings em Python
+
+# Neste exemplo, vamos aprender como utilizar f-strings para inserir variáveis e formatar valores dentro de strings de maneira simples e eficiente.
+
+# Definindo as variáveis principais
 nome = 'Enzo Xavier'
 altura = 1.75
 peso = 74.5
+
+# Calculando o IMC (Índice de Massa Corporal)
 imc = peso / altura ** 2
 
-# Usando f-strings para formatar strings de forma simples e legível
-# Basta colocar um 'f' antes das aspas e usar chaves {} para inserir variáveis ou expressões
+# Exibindo o nome utilizando f-string
+print(f'Nome: {nome}')
 
-# Exemplo básico:
-print(f'O nome é {nome}')
+# Exibindo altura, peso e IMC, formatando os números para duas casas decimais
+print(f'{nome} tem {altura:.2f}m de altura, pesa {peso}kg e seu IMC é {imc:.2f}')
 
-# Também é possível formatar números, como limitar casas decimais:
-print(f'{nome} tem {altura:.2f} de altura, pesa {peso} quilos e seu IMC é {imc:.2f}')
-
-# Explicando a formatação:
-# {altura:.2f} -> mostra a altura com 2 casas decimais
-# {imc:.2f}    -> mostra o IMC com 2 casas decimais
-
-# Você pode criar várias linhas usando f-strings:
+# Também é possível criar mensagens em várias linhas usando f-strings
 mensagem = (
-    f'{nome} tem {altura:.2f} de altura,\n'
-    f'pesa {peso} quilos e seu IMC é {imc:.2f}'
+    f'{nome} tem {altura:.2f}m de altura,\n'
+    f'pesa {peso}kg e seu IMC é {imc:.2f}'
 )
 print(mensagem)
 
+# Observação:
+# - {altura:.2f} formata o valor da altura para duas casas decimais.
+# - {imc:.2f} faz o mesmo para o IMC.
+# - O '\n' serve para quebrar a linha na mensagem.

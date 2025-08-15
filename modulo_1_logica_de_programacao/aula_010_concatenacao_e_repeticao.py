@@ -1,26 +1,32 @@
-# Exemplo de concatenação de strings
-concatenacao = "Python" + " " + "é" + " " + "legal"
-print(concatenacao)  # Saída: Python é legal
+# Aula 10: Concatenando e Repetindo Strings em Python
 
-# Exemplo de repetição com o operador *
-a_dez_vezes = 'A' * 10
-print(a_dez_vezes)  # Saída: AAAAAAAAAA
+# Concatenando strings com o operador +
+# Podemos unir várias strings usando o sinal de +
+frase = "Python" + " " + "é" + " " + "legal"
+print(frase)  # Saída: Python é legal
 
-# Concatenando strings usando o operador +
+# Repetindo caracteres com o operador *
+# O operador * permite repetir uma string várias vezes
+letras_repetidas = 'A' * 10
+print(letras_repetidas)  # Saída: AAAAAAAAAA
+
+# Juntando nome e sobrenome em uma única string
 nome = "Maria"
 sobrenome = "Silva"
 nome_completo = nome + " " + sobrenome
 print(nome_completo)  # Saída: Maria Silva
 
-# Concatenando strings com números (é necessário converter o número para string)
+# Concatenando texto com números
+# Para juntar um número com uma string, precisamos converter o número para string
 idade = 25
 mensagem = "Idade: " + str(idade)
 print(mensagem)  # Saída: Idade: 25
 
-# Repetindo uma string várias vezes usando o operador *
-linha = "-" * 30
-print(linha)  # Saída: ------------------------------
+# Criando uma linha de separação usando repetição de caracteres
+separador = "-" * 30
+print(separador)  # Saída: ------------------------------
 
-# Repetindo uma palavra com espaço
-palavra = ("Oi!" * 3)
-print(palavra)  # Saída: Oi! Oi! Oi! 
+# Repetindo uma palavra várias vezes
+# Podemos repetir uma palavra e remover espaços extras com strip()
+saudacao = ("Oi! " * 3).strip()
+print(saudacao)  # Saída: Oi! Oi! Oi!
