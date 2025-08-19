@@ -8,7 +8,7 @@ from git import Repo
 REPO_PATH = "C:/Users/gasometro/Documents/Projeto"
 
 # Nome do arquivo que ser√° alterado em cada commit
-FILENAME_TO_MODIFY = "modulo_1_logica_de_programacao/auto_commiter.py"
+FILENAME_TO_MODIFY = "modulo_1_logica_de_programacao/zcommit.txt"
 
 # --- L√ìGICA DO SCRIPT ---
 
@@ -46,7 +46,7 @@ def make_commits():
             # Adiciona uma nova linha ao arquivo com data e hora
             with open(file_path, "a+") as f:
                 now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                f.write(f"Commit autom√°tico #{i+1} de {num_commits} em: {now}\n")
+                f.write(f"Commit automatico #{i+1} de {num_commits} em: {now}\n")
 
             # Adiciona o arquivo ao 'staging'
             repo.git.add(file_path)
@@ -67,6 +67,4 @@ def make_commits():
         print(f"Ocorreu um erro durante a execu√ß√£o: {e}")
 
 if __name__ == "__main__":
-    make_commits()Commit autom·tico #1 de 3 em: 2025-08-19 08:33:48
-Commit autom·tico #2 de 3 em: 2025-08-19 08:33:48
-Commit autom·tico #3 de 3 em: 2025-08-19 08:33:48
+    make_commits()
