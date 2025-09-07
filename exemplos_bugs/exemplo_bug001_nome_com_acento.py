@@ -1,4 +1,4 @@
-# TICKET: #BUG-2847
+# TICKET: #2847
 # Prioridade: Média
 # Descrição: Usuários não conseguem se cadastrar quando o nome tem acentos
 # Reprodução: Tentar cadastrar com nome "José da Silva" - sistema rejeita
