@@ -1,6 +1,5 @@
-import math
-
 def divisores():
+    import math
     try:
         numero = int(input("Digite um número: "))
         
