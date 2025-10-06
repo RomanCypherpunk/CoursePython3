@@ -1,7 +1,7 @@
 import math
 
 def divisors(num):
-    raiz_num = int(math.sqrt(num))
+    raiz_num = int(math.sqrt(num)) + 1
     lista = [a for a in range(2, raiz_num) if num%a == 0]
     if len(lista) == 0:
         return str(num) + " é primo, não tem divisores"
