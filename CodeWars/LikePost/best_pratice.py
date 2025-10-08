@@ -36,6 +36,7 @@ def likes(names):
         others=n - 2 if n > 3 else 1
     )
 
+likes(["Enzo", "João", "Pedro", "Davi", "Paulo"])
 # 💡 Resumindo o raciocínio:
 # - Eu usei um dicionário para escolher rapidamente o formato certo da frase.
 # - Usei o método "format" para inserir os nomes nas posições corretas dos {}.
