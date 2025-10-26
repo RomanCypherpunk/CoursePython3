@@ -40,7 +40,7 @@ while True:
                 print("Digite um índice válido! (Exemplo: 1)")
     
     # -------------------------------- OPERAÇÃO LISTAR --------------------------------
-    if operacao == "L":
+    if operacao == "L": 
         if not compras: # Encerra a operação se a lista de compras estiver vazia
             print("Lista está vazia, não há o que listar.")
 
