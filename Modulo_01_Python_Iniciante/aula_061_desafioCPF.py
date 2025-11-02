@@ -103,4 +103,3 @@ print(f"O segundo digito do CPF é: {segundo_digito}")
 
 
 
-
