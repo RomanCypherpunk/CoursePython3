@@ -16,3 +16,7 @@ def zipper(list_1, list_2):
     return [(list_1[i], list_2[2]) for i in range(interval)]
 
 print(zipper(listaCidades, listaEstados))
+
+# OU
+listaZippada = list(zip(listaCidades, listaEstados))
+print(listaZippada)
